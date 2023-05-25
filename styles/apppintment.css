@@ -1,0 +1,18 @@
+img{
+    height: 100px;
+    width: 100px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 50px 100px;
+    text-align: center;
+    align-items: center;
+}
+
+#container>div{
+    border: 3px solid black;
+    width: 300px;
+    /* height: 300px; */
+}

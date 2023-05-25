@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+</head>
+<body>
+    <form action="" id="addApp">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="image" placeholder="Image URL">
+        <select  name="Specialization" id="spec">
+                <option value="">Select Specialization</option>
+                <option value="Cardiologist">Cardiologist</option>
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="Pediatrician">Pediatrician</option>
+                <option value="Psychiatrist">Psychiatrist </option>
+              </select>
+        <input type="number" id="exp" placeholder="Experience">
+        <input type="text" id="loc" placeholder="Location">
+        <input type="date" id="date" placeholder="Date">
+        <input type="number" id="slots" placeholder="Slots">
+        <input type="number" id="fees" placeholder="Fees">
+        <input type="submit" value="Submit" />
+    </form>
+
+
+    <div id="container">    
+        <h1>Appointment Dashboard</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Doctor Name</th>
+              <th>specialization</th>
+              <th>experience</th>
+              <th>location</th>
+              <th>slots</th>
+              <th>Edit</th>
+              <th>Delete</th>
+              <th>Appointment</th>
+            </tr>
+          </thead>
+          <tbody id="mainDiv">
+           
+          </tbody>
+        </table>
+      
+      </div>
+
+</body>
+</html>
+<script src="../scripts/doctor.js"></script>
