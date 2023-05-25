@@ -14,7 +14,7 @@ let fee= +form.fees.value;
 
 let obj={name,image,specialization,experience,location,date,slots,fee};
 
-let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/appointments`, {
+let res= await fetch(`https://mock4-backend-rhb7.onrender.com/appointments`, {
     method:'POST',
     body:JSON.stringify(obj),
     headers:{
@@ -28,7 +28,7 @@ let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/appointments`, {
 }
 
 async function getApp(){
-    let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/appointments`)
+    let res= await fetch(`https://mock4-backend-rhb7.onrender.com/appointments`)
     let  appData= await res.json();
 
     appendData(appData)
@@ -63,7 +63,7 @@ myData.forEach((el)=>{
 
   deleteBtn.onclick= async()=>{
     let bookId= el.id;
-    let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/appointments/${bookId}`,{
+    let res= await fetch(`https://mock4-backend-rhb7.onrender.com/appointments/${bookId}`,{
       method:'DELETE',
       headers:{
         'Content-Type': 'application/json'

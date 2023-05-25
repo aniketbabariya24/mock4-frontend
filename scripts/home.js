@@ -42,10 +42,10 @@ let lPass= document.getElementById("lPass").value;
         flag=true;
         if(userData[i].password==lPass && userData[i].isDoctor==false){
             window.alert('Login Succesfully');
-            window.location.href='appointment.html'
+            window.location.href='./html/appointment.html'
         }else if(userData[i].password==lPass && userData[i].isDoctor==true){
             window.alert('Login Succesfully');
-            window.location.href='doctor.html'
+            window.location.href='./html/doctor.html'
         }
         else{
             window.alert('Login Failed'); 
@@ -60,4 +60,5 @@ let lPass= document.getElementById("lPass").value;
   lEmail.value="";
   lPass.value="";
 
+  return false;
 })
