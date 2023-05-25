@@ -19,7 +19,8 @@ submit.addEventListener("click", async function signup(event){
 
    });
     let data= await res.json();
-    console.log(data)
+    console.log(data);
+    window.alert("User registered successFully")
 });
 
 
