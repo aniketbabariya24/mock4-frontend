@@ -4,8 +4,8 @@ submit.addEventListener("click", async function signup(event){
     event.preventDefault();
 
     let username=document.getElementById("username").value;
-    let email=document.getElementById("username").value;
-    let password=document.getElementById("username").value;
+    let email=document.getElementById("email").value;
+    let password=document.getElementById("pass").value;
     let isDoctor=document.getElementById("isDoctor").checked;
 
     let obj={username,email,password,isDoctor};
