@@ -1,7 +1,7 @@
 let appData;
 let page=1;
 async function getApp(appData){
-    let res= await fetch(`http://localhost:3000/appointments?_page=${page}&_limit=4`)
+    let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/appointments?_page=${page}&_limit=4`)
      appData= await res.json();
 
     appendData(appData)
@@ -69,7 +69,7 @@ let mySp= document.getElementById("mySp").value;
     else if(mySp!="" ){
 
         let getData2=async(appData)=>{
-            apiUrl=`http://localhost:3000/appointments?specialization=${mySp}`
+            apiUrl=`https://pear-brave-harp-seal.cyclic.app/appointments?specialization=${mySp}`
             
                 try {
                     let res= await fetch(apiUrl);
@@ -89,7 +89,7 @@ let mySp= document.getElementById("mySp").value;
 
 async function mysort(){
     try {
-        let res= await fetch(`http://localhost:3000/appointments?_sort=date&_order=asc`);
+        let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/appointments?_sort=date&_order=asc`);
 
     appData=await res.json();
 

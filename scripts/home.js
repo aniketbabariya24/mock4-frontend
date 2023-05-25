@@ -10,7 +10,7 @@ submit.addEventListener("click", async function signup(event){
 
     let obj={username,email,password,isDoctor};
 
-   let res= await fetch(`http://localhost:3000/users`, {
+   let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/users`, {
     method:'POST',
     body:JSON.stringify(obj),
     headers:{
@@ -28,7 +28,7 @@ let lSubmit= document.getElementById("lSubmit");
 
 lSubmit.addEventListener("click", async function getData(event){
     event.preventDefault();
-    let res= await fetch(`http://localhost:3000/users`)
+    let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/users`)
   let  userData= await res.json();
 
   let flag= false;

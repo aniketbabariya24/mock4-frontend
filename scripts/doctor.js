@@ -14,7 +14,7 @@ let fee= +form.fees.value;
 
 let obj={name,image,specialization,experience,location,date,slots,fee};
 
-let res= await fetch(`http://localhost:3000/appointments`, {
+let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/appointments`, {
     method:'POST',
     body:JSON.stringify(obj),
     headers:{
@@ -28,7 +28,7 @@ let res= await fetch(`http://localhost:3000/appointments`, {
 }
 
 async function getApp(){
-    let res= await fetch(`http://localhost:3000/appointments`)
+    let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/appointments`)
     let  appData= await res.json();
 
     appendData(appData)
@@ -63,7 +63,7 @@ myData.forEach((el)=>{
 
   deleteBtn.onclick= async()=>{
     let bookId= el.id;
-    let res= await fetch(`http://localhost:3000/appointments/${bookId}`,{
+    let res= await fetch(`https://pear-brave-harp-seal.cyclic.app/appointments/${bookId}`,{
       method:'DELETE',
       headers:{
         'Content-Type': 'application/json'
