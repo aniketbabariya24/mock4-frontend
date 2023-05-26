@@ -23,7 +23,7 @@ let res= await fetch(`https://mock4-backend-rhb7.onrender.com/appointments`, {
 
    });
     let data= await res.json();
-    console.log(data)
+    getApp();
 
 }
 
